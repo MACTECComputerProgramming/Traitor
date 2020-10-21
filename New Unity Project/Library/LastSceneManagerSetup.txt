@@ -1,5 +1,0 @@
-sceneSetups:
-- path: Assets/Hand Painted Seamless ClayGround Texture/Demo/Scene/Demo.unity
-  isLoaded: 1
-  isActive: 1
-  isSubScene: 0
