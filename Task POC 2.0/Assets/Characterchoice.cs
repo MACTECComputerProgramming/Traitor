@@ -5,10 +5,13 @@ using UnityEngine;
 public class Characterchoice : MonoBehaviour
 {
     
+
     void Start()
     {
+        
 
-        Debug.Log(Random.Range(1, 2));
+        
+        
 
 
 
@@ -18,5 +21,8 @@ public class Characterchoice : MonoBehaviour
     void Update()
     {
         
+        
+
+
     }
 }
