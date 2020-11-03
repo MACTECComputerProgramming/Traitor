@@ -5,35 +5,13 @@ using UnityEngine;
 
 public class Characterchoice : MonoBehaviour
 {
-    public SpriteRenderer spriteRenderer;
-    
-    
+    public GameObject characterPrefab;
+    public Sprite[] characterSprites;
 
-
-    void Start()
+    public void TaggedPlayer()
     {
-        Random.Range(0, 1);
-
-        bool x = spriteRenderer;
-
-        if (x == false)
-        {
-            Color newColor = new Color(255, 0, 0, 0);
-
-        }
-        else if (x == true)
-        {
-            Color newColor = new Color(0, 0, 0, 0);
-
-        }
-
-
+        int arrayIdk = Random.Range(0, characterSprites.Length);
     }
 
-    
-    void Update()
-    {
-        
-        
-    }
+
 }
