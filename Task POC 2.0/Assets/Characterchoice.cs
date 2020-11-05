@@ -1,17 +1,21 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
+﻿using UnityEngine;
+using System.Collections;
 
 public class Characterchoice : MonoBehaviour
 {
     public GameObject characterPrefab;
     public Sprite[] characterSprites;
 
-    public void TaggedPlayer()
+    public void ChooseTaggedPlayer()
     {
-        int arrayIdk = Random.Range(0, characterSprites.Length);
-    }
+        int arrayIdx = Random.Range(0, characterSprites.Length);
+        Sprite characterSprite = characterSprites[arrayIdx];
 
+        GameObject newCharacter = Instantiate(characterPrefab);
+        newCharacter.GetComponent<SpriteRenderer>().sprite = characterSprite;
+
+
+    }
+    
 
 }
